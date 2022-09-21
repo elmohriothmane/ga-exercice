@@ -14,12 +14,12 @@ jobs:
           node-version: 16
 
       - name: Install dependancies
-        working-directory: ./app
+        working-directory: ./node-app
         run: npm ci
 
 
       - name: build
-        working-directory: ./app
+        working-directory: ./node-app
         run: npm run build
 
 
